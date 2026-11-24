@@ -29,7 +29,7 @@ budget = st.slider(
     "What is your maximum budget (£)?",
     min_value=300,
     max_value=2000,
-    value=900,
+    value=0,
     step=50
 )
 
@@ -89,7 +89,7 @@ for position, laptop in enumerate(eligible_laptops, start=1):
 
 
 
-
+#caomparison
 st.subheader("Understand the trade-offs")
 
 st.write(
@@ -128,7 +128,7 @@ if len(eligible_laptops) >= 2:
     if first_choice == second_choice:
         st.warning("Please select two different laptops.")
     else:
-        st.write(
+        st.caption(
             f"Comparing {first_laptop['name']} "
             f"with {second_laptop['name']}"
         )
