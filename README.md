@@ -2,13 +2,12 @@
 # Explainable Laptop Recommender
 
 An interactive, rule-based laptop recommendation system developed
-for the Intelligent Interactive Systems module at the
-University of Birmingham.
+for Intelligent Interactive Systems module.
 
 ## Project Overview
 
 The Explainable Laptop Recommender helps users explore
-laptop options and understand the trade offs between them
+laptop options and understand the trade-offs between them.
 
 Users can:
 - Set a maximum budget
@@ -34,7 +33,7 @@ The system uses a deterministic recommendation algorithm.
    relative to the alternative
 
 The system does not use machine learning or a large
-language model
+language model.
 
 ## Technologies
 
@@ -109,7 +108,7 @@ The application will open in your web browser.
 ## Testing
 
 Six manual functional tests were carried out to verify
-the recommendation and comparison functionality
+the recommendation and comparison functionality.
 
 | Test | Input / Action | Expected Result | Result |
 |---|---|---|---|
@@ -124,9 +123,9 @@ All six tests passed during manual testing.
 
 ### Testing Limitations
 
-These tests verify specific functional behaviours
+These tests verify specific functional behaviours.
 They do not establish that the system improves users'
-understanding, satisfaction or decision quality
+understanding, satisfaction or decision quality.
 
 ## Development History
 
@@ -157,6 +156,8 @@ The application was developed incrementally:
    - Added feedback for budgets with no matching laptops
    - Completed six manual functional tests
 
+Budget filtering was implemented before ranking because affordability was treated as a hard constraint rather than a preference. The comparison feature was introduced because ranking laptops alone did not show users the disadvantages of choosing one option over another.Explanations were refined to highlight disadvantages, rather than simply identifying the stronger option. Manual tests checked these behaviours. This prioritised understandable recommendations and user control over a more complex recommendation algorithm.
+
 ## Use of AI Assistance
 
 ChatGPT was used to:
@@ -167,7 +168,7 @@ ChatGPT was used to:
 - Providing functional tests 
 - Structuring the README documentation 
 
-Documentation was checked against the application to check accuracy
+Documentation was checked against the application to check accuracy.
 
 ## Future Improvements
 
